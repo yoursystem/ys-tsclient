@@ -2,7 +2,7 @@ Digital stamping java library
 =============================
 
 This project contains source code for Java library for digital time stamping.
-Library using postsignum service to generate time time stamp for given file.
+Library using postsignum service to generate time stamp for given file.
 
 ## Links
 
@@ -18,12 +18,18 @@ The project uses the following technologies:
 ### Deps
 
 - org.bouncycastle.bctsp-jdk16
+- org.slf4j.slf4j-api
 
 ```
 <dependency>
   <groupId>org.bouncycastle</groupId>
   <artifactId>bctsp-jdk16</artifactId>
   <version>1.46</version>
+</dependency>
+<dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-api</artifactId>
+  <version>1.7.13</version>
 </dependency>
 ```
 
