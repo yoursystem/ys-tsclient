@@ -43,12 +43,18 @@ The project uses the following technologies:
 The following command generates jar archive.
 
     mvn package
-    
+
 Generated jar contains truststore with postsignum certs.
+
+If you want to package jar with all dependencies use the following command:
+
+    mvn assembly:single
+
+It will create target/ys-timestamp-client-1.0.1-jar-with-dependencies.jar .
 
 ## Usage
 
-The fellowing code generates time stamp for `sample/sample.zip` file, 
+The fellowing code generates time stamp for `sample/sample.zip` file,
 saves digest to `sample/sample.zip.tsq` and time stamp to `sample/sample.zip.tsr`.
 
 ```
