@@ -19,6 +19,9 @@ The project uses the following technologies:
 
 - org.bouncycastle.bctsp-jdk16
 - org.slf4j.slf4j-api
+- logback
+
+See pom.xml for deps.
 
 ```
 <dependency>
@@ -68,3 +71,11 @@ TSClient tsClient = new TSClient("demoTSA", "demoTSA2010", TSClient.POSTSIGNUM_T
 String sample_file = "./sample/export.zip";
 tsClient.stamp(sample_file, DigestAlgEnum.HA_1);
 ```
+
+## Contributors
+
+- Jan Šimůnek (jan.simunek@ys.cz)
+
+## License
+
+This source code is under MIT License.
